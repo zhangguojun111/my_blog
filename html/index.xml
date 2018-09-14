@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>我的博客网站</title>
+    <link>/</link>
+    <description>Recent content on 我的博客网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Aug 2018 15:24:56 +0800</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/new/</link>
+      <pubDate>Thu, 23 Aug 2018 15:24:56 +0800</pubDate>
+      
+      <guid>/new/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Good Good Study Day Day Up</title>
+      <link>/post/good-good-study-day-day-up/</link>
+      <pubDate>Thu, 23 Aug 2018 14:05:39 +0800</pubDate>
+      
+      <guid>/post/good-good-study-day-day-up/</guid>
+      <description> 格言收集  好好学习，天天向上 没有免费的午餐 困境即是成长，战胜它，你就获得成长  </description>
+    </item>
+    
+    <item>
+      <title>Thanks</title>
+      <link>/post/thanks/</link>
+      <pubDate>Thu, 23 Aug 2018 14:05:22 +0800</pubDate>
+      
+      <guid>/post/thanks/</guid>
+      <description>鸣谢 感谢我的家人，爱我的人和我爱的人，感谢你们的支持。感谢父母，谢谢你们给我生命的机会！</description>
+    </item>
+    
+    <item>
+      <title>终生学习</title>
+      <link>/post/learning/</link>
+      <pubDate>Thu, 23 Aug 2018 14:05:17 +0800</pubDate>
+      
+      <guid>/post/learning/</guid>
+      <description>终生学习 现在都倡导 终生学习 的概念，那么，在这样的“潮流”之下，我们该如何进行“终生学习”呢。
+相信每个人都有不同的看法，你怎么看？</description>
+    </item>
+    
+    <item>
+      <title>为什么用python?</title>
+      <link>/post/why-python/</link>
+      <pubDate>Thu, 23 Aug 2018 14:05:12 +0800</pubDate>
+      
+      <guid>/post/why-python/</guid>
+      <description> 为什么用 python? python 是一门动态语言，灵活，而强大。具有极好的开发效率
+下面是一个最简单的 hello,world 代码，就一行：
+print(&amp;quot;hello,world&amp;quot;)  </description>
+    </item>
+    
+    <item>
+      <title>Flask开发</title>
+      <link>/post/flask/</link>
+      <pubDate>Thu, 23 Aug 2018 14:04:57 +0800</pubDate>
+      
+      <guid>/post/flask/</guid>
+      <description>flask 开发 Flask 是 Python 下的一个优秀的 Web 开发框架</description>
+    </item>
+    
+    <item>
+      <title>web 网站开发</title>
+      <link>/post/web-site-development/</link>
+      <pubDate>Thu, 23 Aug 2018 14:04:54 +0800</pubDate>
+      
+      <guid>/post/web-site-development/</guid>
+      <description> Web网站开发 当今社会，大量的 Web 网站涌现出来，就算是手机时代，也依然需要 Web 技术。
+Web 开发需要什么知识呢？
+首先，你需要一个网站是由什么组成的？浏览器是如何展现出一个页面的？ 页面来自哪里？服务器在哪？
+那么最后，服务器如何生成这些内容呢？
+把这些问题搞明白，你就能知道网站如何制作了。
+学习路径：
+ 一门编程语言, Python/Java/Nodejs/Go 其中挑选一个 HTML/CSS/JAVASCRIPT HTTP 服务器开发 各类应用设计 面向对象设计 数据库设计  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/login/</link>
+      <pubDate>Thu, 23 Aug 2018 14:04:26 +0800</pubDate>
+      
+      <guid>/login/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>你好</title>
+      <link>/post/hello/</link>
+      <pubDate>Thu, 23 Aug 2018 13:38:54 +0800</pubDate>
+      
+      <guid>/post/hello/</guid>
+      <description>欢迎你 非常高兴你能来到我们这里，这是非常棒的！哈哈哈</description>
+    </item>
+    
+    <item>
+      <title>About Hugo</title>
+      <link>/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hugo is the world’s fastest framework for building websites. It is written in Go.
+It makes use of a variety of open source projects including:
+ https://github.com/russross/blackfriday https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Learn more and contribute on GitHub.</description>
+    </item>
+    
+  </channel>
+</rss>

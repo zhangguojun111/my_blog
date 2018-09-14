@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on 我的博客网站</title>
+    <link>/tags/web/</link>
+    <description>Recent content in Web on 我的博客网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Aug 2018 14:04:54 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>web 网站开发</title>
+      <link>/post/web-site-development/</link>
+      <pubDate>Thu, 23 Aug 2018 14:04:54 +0800</pubDate>
+      
+      <guid>/post/web-site-development/</guid>
+      <description> Web网站开发 当今社会，大量的 Web 网站涌现出来，就算是手机时代，也依然需要 Web 技术。
+Web 开发需要什么知识呢？
+首先，你需要一个网站是由什么组成的？浏览器是如何展现出一个页面的？ 页面来自哪里？服务器在哪？
+那么最后，服务器如何生成这些内容呢？
+把这些问题搞明白，你就能知道网站如何制作了。
+学习路径：
+ 一门编程语言, Python/Java/Nodejs/Go 其中挑选一个 HTML/CSS/JAVASCRIPT HTTP 服务器开发 各类应用设计 面向对象设计 数据库设计  </description>
+    </item>
+    
+  </channel>
+</rss>
