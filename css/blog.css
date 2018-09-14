@@ -1,0 +1,22 @@
+html,body {
+    font-family: 'Open Sans', sans-serif;
+    background: #F0F2F4;
+    }
+.hero-body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+.mysocial { color: hsl(0, 0%, 100%);}
+.mysocial:hover { color: hsl(0, 0%, 71%) }
+
+.login-form {
+  margin: 0 auto;
+  width: 400px;
+}
+
+
+.new-post-form textarea {
+  width: 100%;
+  height: 600px;
+}
