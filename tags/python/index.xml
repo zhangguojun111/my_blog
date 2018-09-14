@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on 我的博客网站</title>
-    <link>//blog-site-sample/tags/python/</link>
+    <link>/tags/python/</link>
     <description>Recent content in Python on 我的博客网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Aug 2018 14:05:12 +0800</lastBuildDate>
     
-	<atom:link href="//blog-site-sample/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>为什么用python?</title>
-      <link>//blog-site-sample/post/why-python/</link>
+      <link>/post/why-python/</link>
       <pubDate>Thu, 23 Aug 2018 14:05:12 +0800</pubDate>
       
-      <guid>//blog-site-sample/post/why-python/</guid>
+      <guid>/post/why-python/</guid>
       <description> 为什么用 python? python 是一门动态语言，灵活，而强大。具有极好的开发效率
 下面是一个最简单的 hello,world 代码，就一行：
 print(&amp;quot;hello,world&amp;quot;)  </description>
