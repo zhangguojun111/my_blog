@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<div class="columns">
+    <div class="column is-9">
+        <div class="tile is-child box">
+            <div class="content">
+
+                {{ post_path }}
+
+            </div>
+        </div>
+    </div>
+
+    {% include 'side.html' %}
+</div>
+
+{% endblock main %}

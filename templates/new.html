@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<div class="new-post-form">
+    <h1 class="title">发贴</h1>
+      <form class="">
+          <div class="field">
+              <div class="control">
+                  <input class="input " type="text" placeholder="标题" autofocus="">
+              </div>
+          </div>
+          <div class="field">
+              <div class="control">
+                  <input class="input " type="text" placeholder="标签" autofocus="">
+              </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+                <textarea class="textarea" type="text" row="50" ></textarea>
+            </div>
+          </div>
+          <button class="button is-block is-info">提交</button>
+      </form>
+
+  </div>
+
+{% endblock main %}
