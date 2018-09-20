@@ -1,9 +1,9 @@
-
+"""
+处理登录，退出
+"""
 from flask import Blueprint, render_template
 
 bp = Blueprint('blog', __name__)
-
-
 
 
 @bp.route("/tags/<keyword>/")
@@ -13,5 +13,5 @@ def tags(keyword):
 
 @bp.route("/post/<post_path>/")
 def post(post_path):
-    return render_template('post.html', post_path= post_path)
+    return render_template('post.html', post_path=post_path)
     pass

@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 
+{% block head_addition %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='editormd/editormd.css') }}"/>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='editormd/editormd.js') }}"></script>
+
+
+
+{% endblock head_addition  %}
+
+
 {% block main %}
 
 <div class="new-post-form">
@@ -18,10 +29,44 @@
 
           <div class="field">
             <div class="control">
+                <div id="test-editormd">
                 <textarea class="textarea" type="text" row="50" ></textarea>
+                </div>
+                <script type="text/javascript">
+                    var testEditor;
+        
+                    $(function() {
+                        testEditor = editormd("test-editormd", {
+                            width   : "100%",
+                            height  : 640,
+                            syncScrolling : "single",
+                            path    : "{{ url_for('static', filename='editormd/lib/') }}",
+                            saveHTMLToTextarea : true
+                        });
+                        
+                        document.getElementById("btnSubmit").addEventListener('click',
+                            function (e){
+                                alert('markdown:'+testEditor.getMarkdown())
+                                alert('markdown:'+testEditor.getHTML())
+
+                            }
+                        )
+
+                        /*
+                        // or
+                        testEditor = editormd({
+                            id      : "test-editormd",
+                            width   : "90%",
+                            height  : 640,
+                            path    : "../lib/"
+                        });
+                        */
+                    });
+                </script>
+
             </div>
           </div>
-          <button class="button is-block is-info">提交</button>
+          <button id="btnSubmit" class="button is-block is-info" type="button">提交</button>
       </form>
 
   </div>

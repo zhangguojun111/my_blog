@@ -5,12 +5,9 @@ import pymysql
 """
 
 
-
-
 def get_db():
     db = pymysql.connect(host='127.0.0.1', user='root', password='root', db='')
     return db
-
 
 
 def select():
@@ -23,9 +20,7 @@ def select():
         db.close()
 
 
-
-
-def query_db(sql, args=None,one = False):
+def query_db(sql, args=None, one=False):
     """
 
     :param sql:
@@ -39,8 +34,8 @@ def query_db(sql, args=None,one = False):
         cs.execute("select 1")
         result = cs.fetchall()
         cs.close()
-        if one :
-            if len(result)>0:
+        if one:
+            if len(result) > 0:
                 return result[0]
             else:
                 return None
@@ -50,8 +45,9 @@ def query_db(sql, args=None,one = False):
         db.close()
 
 
-
-
+"""
+处理链接数据库
+"""
 def update_db(sql, args=None):
     try:
         db = get_db()
@@ -64,7 +60,6 @@ def update_db(sql, args=None):
         return update_count, lastrowid
     finally:
         db.close()
-
 
 
 def get_one_post(post_path):

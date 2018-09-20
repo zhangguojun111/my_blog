@@ -1,7 +1,11 @@
+"""
+主运行程序
+"""
 from flask import Flask, render_template,session,redirect
 import blog
 import auth
 import admin
+
 
 app = Flask(__name__)
 app.secret_key = 'dey'

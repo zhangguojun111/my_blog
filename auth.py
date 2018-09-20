@@ -1,3 +1,7 @@
+"""
+处理登录验证等
+"""
+
 from flask import Blueprint, render_template, session, redirect
 from functools import wraps
 bp = Blueprint('auth', __name__)

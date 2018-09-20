@@ -13,6 +13,11 @@
     <link href="https://cdn.bootcss.com/bulma/0.7.1/css/bulma.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}"/>
+
+    {% block head_addition %}
+
+    {% endblock head_addition  %}
+
 </head>
 <body>
 
