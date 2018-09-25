@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+    <div class="section">
+
+
+        <div class="login-form">
+            <h1 class="title">请登录</h1>
+            <form class="" method="post">
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-large" name="username" type="text" placeholder="账号" autofocus="">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-large" name="password" type="password" placeholder="密码">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        记住我
+                    </label>
+                </div>
+                <button class="button is-block is-info is-large is-fullwidth" type="submit" >登录</button>
+            </form>
+
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock main %}

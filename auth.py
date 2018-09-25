@@ -2,15 +2,27 @@
 处理登录验证等
 """
 
-from flask import Blueprint, render_template, session, redirect
+from flask import Blueprint, render_template, session, redirect, request
 from functools import wraps
+import db
+
 bp = Blueprint('auth', __name__)
 
 
-@bp.route('/login/')
+@bp.route('/login/', methods=["POST", "GET"])
 def login():
-    session['user'] = 'admin'
-    return redirect('/')
+    """登录"""
+    if request.method == "POST":
+        username = request.form.get("username")
+        sql = "SELECT * FROM user WHERE name='" + username + "'"
+        rows = db.query_db(sql, one=True)
+        if rows[2] == request.form.get("password"):
+            session['user'] = rows[0]
+            return redirect('/')
+        else:
+            return render_template("loginfailure.html")
+    else:
+        return render_template("login.html")
 
 
 @bp.route('/logout/')
@@ -30,5 +42,5 @@ def login_required(view_func):
         if not is_login():
             return redirect('/')
         return view_func(**kwargs)
-    return wrapped_view
 
+    return wrapped_view

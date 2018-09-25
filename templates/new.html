@@ -2,10 +2,9 @@
 
 {% block head_addition %}
 
-<link rel="stylesheet" href="{{ url_for('static', filename='editormd/editormd.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='editormd/editormd.css') }}"/>
 <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 <script src="{{ url_for('static', filename='editormd/editormd.js') }}"></script>
-
 
 
 {% endblock head_addition %}
@@ -18,12 +17,12 @@
     <form class="">
         <div class="field">
             <div class="control">
-                <input class="input " type="text" placeholder="标题" autofocus="">
+                <input class="input " id="title" type="text" placeholder="标题" autofocus="">
             </div>
         </div>
         <div class="field">
             <div class="control">
-                <input class="input " type="text" placeholder="标签" autofocus="">
+                <input class="input " id="tag" type="text" placeholder="标签" autofocus="">
             </div>
         </div>
 
@@ -46,27 +45,27 @@
 
                         document.getElementById("btnSubmit").addEventListener('click',
                             function (e) {
-                                alert('markdown:' + testEditor.getMarkdown())
-                                alert('markdown:' + testEditor.getHTML())
+                                alert('markdown:' + testEditor.getMarkdown());
+                                alert('markdown:' + testEditor.getHTML());
 
-                               
-                                    var requesrt = new XMLHttpRequest();
-                                    requesrt.open("POST", "/new/");
-                                    requesrt.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-                                    var data = "markdown=" + testEditor.getMarkdown() + "&html=" + testEditor.getHTML();
-                                    requesrt.send(data);
-                                    alert("发送的:" + data);
-                                    requesrt.onreadystatechange = function () {
-                                        if (requesrt.readyState === 4) {
-                                            if (requesrt.status === 200) {
-                                                alert("返回的:" + requesrt.responseText);
-                                            } else {
-                                                alert("发生错误" + requesrt.status)
-                                            }
+
+                                var requesrt = new XMLHttpRequest();
+                                requesrt.open("POST", "/new/");
+                                requesrt.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                                var data ="title="+document.getElementById("title").value+"&tag="+document.getElementById("tag").value
+                                    +"&markdown=" + testEditor.getMarkdown() + "&html=" + testEditor.getHTML();
+                                requesrt.send(data);
+                                alert("发送的:" + data);
+                                requesrt.onreadystatechange = function () {
+                                    if (requesrt.readyState === 4) {
+                                        if (requesrt.status === 200) {
+                                            alert("返回的:" + requesrt.responseText);
+                                        } else {
+                                            alert("发生错误" + requesrt.status)
                                         }
                                     }
                                 }
-                            
+                            }
                         )
 
                         /*

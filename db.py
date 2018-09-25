@@ -6,12 +6,11 @@ import pymysql
 
 
 def get_db():
-    db = pymysql.connect(host='127.0.0.1', user='root', password='root', db='')
+    db = pymysql.connect(host='127.0.0.1', user='root', password='root', db='my-blog')
     return db
 
 
 def select():
-
     try:
         db = get_db()
         cs = db.cursor()
@@ -28,10 +27,10 @@ def query_db(sql, args=None, one=False):
     :param one:  等于False 为查询多条记录， 等于True时返回一条记录
     :return:
     """
+    db = get_db()
     try:
-        db = get_db()
         cs = db.cursor()
-        cs.execute("select 1")
+        cs.execute(sql)
         result = cs.fetchall()
         cs.close()
         if one:
@@ -49,10 +48,10 @@ def query_db(sql, args=None, one=False):
 处理链接数据库
 """
 def update_db(sql, args=None):
+    db = get_db()
     try:
-        db = get_db()
         cs = db.cursor()
-        cs.execute("select 1")
+        cs.execute(sql)
         db.commit()
         lastrowid = cs.lastrowid
         update_count = cs.rowcount
