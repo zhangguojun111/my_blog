@@ -6,8 +6,9 @@
     <div class="column is-9">
         <div class="tile is-child box">
             <div class="content">
-
+               {% autoescape false %}
                 {{ post_path }}
+               {% endautoescape %}
 
             </div>
         </div>

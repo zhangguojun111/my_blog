@@ -13,6 +13,21 @@
                 <h3>Welcome to my blog !</h3>
                 <hr>
 
+                 {% for i in rows %}
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p class="title is-4"><a href="/post/{{i[1]}}/">{{i[2]}}</a></p>
+                                    <p class="subtitle is-size-6 has-text-grey-light">
+                                       发布于 {{i[5]}}
+                                    </p>
+                                    <p> {{i[3]}}</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        {% endfor %}
+
                 <article class="media">
                     <div class="media-content">
                         <div class="content">
