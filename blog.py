@@ -1,7 +1,7 @@
 """
 处理登录，退出
 """
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template,g
 import db
 bp = Blueprint('blog', __name__)
 
