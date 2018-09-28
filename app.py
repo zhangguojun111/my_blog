@@ -6,8 +6,10 @@ import blog
 import auth
 import admin
 import db
+import config
 
 app = Flask(__name__)
+app.config.from_object(config)
 app.secret_key = 'dey'
 app.register_blueprint(blog.bp)
 app.register_blueprint(auth.bp)
@@ -39,7 +41,6 @@ def index():
         list_rows.append(rows)
         p = 1
         pass
-    s = request.args.get("p")
     select_sql = "select DISTINCT tag_name from posts_tags"
     tag = db.query_db(select_sql)
 
@@ -47,8 +48,14 @@ def index():
         rows = list_rows[int(request.args.get("p")) - 1]
     else:
         rows = list_rows[0]
-    return render_template("index.html", rows=rows, s=request.args.get("p"), p=p, tag=tag)
+
+    res_dict = {
+        "rows": rows,
+        "tag": tag,
+        "p": p,
+    }
+    return render_template("index.html", **res_dict)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

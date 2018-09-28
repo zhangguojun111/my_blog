@@ -1,7 +1,7 @@
 """
 处理发帖等
 """
-from flask import Blueprint, render_template, redirect, request, session
+from flask import Blueprint, render_template, redirect, request, session,jsonify
 from auth import login_required
 import db
 
@@ -34,3 +34,22 @@ def new_post():
         return mar + "---" + html + "---" + title + "---" + str(tag_list) + 'l:' + str(rows[0])
     # return "错误了"
     return render_template('new.html')
+
+
+
+@bp.route("/image/", methods=["POST", "GET"])
+@login_required
+def image():
+    image_data = request.form.data()
+
+    d = {
+    "success" : 1,
+    "message": "Runoob",
+    "url" : "http://www.runoob.com"
+}
+    data = {"success" : 1,
+    "message": "Runoob",
+    "url" : "http://www.runoob.com"}
+    print(image_data)
+    return jsonify(data)
+    pass
